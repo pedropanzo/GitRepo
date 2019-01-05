@@ -160,7 +160,7 @@ def main():
             total_fail += 0 if ok else 1
 
             if r < REPETICOES and executando:
-                aguardar(PAUSA_ENTRE_SCRIPTS, "Proxima repeticao em")
+                aguardar(PAUSA_ENTRE_SCRIPTS, "Proxima repeticao em")        
 
         # ── Fase 2: dat.py 1x ──
         if executando:
