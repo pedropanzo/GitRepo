@@ -65,7 +65,7 @@ def commit_auto_push():
     
     # Fazer push
     print("\n📤 Enviando para o repositório remoto...")
-    _, stderr, code = executar_comando("git push")
+    #_, stderr, code = executar_comando("git push")
     
     if code == 0:
         print("✅ Push realizado com sucesso!")
