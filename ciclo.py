@@ -15,8 +15,8 @@ from datetime import datetime
 # ──────────────────────────────────────────────
 # CONFIGURAÇÃO
 # ──────────────────────────────────────────────
-REP_MIN             = 10  # mínimo de repetições por ciclo
-REP_MAX             = 20  # máximo de repetições por ciclo
+REP_MIN             = 5  # mínimo de repetições por ciclo
+REP_MAX             = 30  # máximo de repetições por ciclo
 PAUSA_ENTRE_SCRIPTS = 1   # segundos entre tex.py e com.py
 PAUSA_ENTRE_CICLOS  = 4  # segundos entre cada ciclo completo
 MAX_CICLOS          = 0   # 0 = infinito
