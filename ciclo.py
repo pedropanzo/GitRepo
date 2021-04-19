@@ -17,8 +17,8 @@ from datetime import datetime
 # ──────────────────────────────────────────────
 REP_MIN             = 5  # mínimo de repetições por ciclo
 REP_MAX             = 15  # máximo de repetições por ciclo
-PAUSA_ENTRE_SCRIPTS = 4   # segundos entre tex.py e com.py
-PAUSA_ENTRE_CICLOS  = 5  # segundos entre cada ciclo completo
+PAUSA_ENTRE_SCRIPTS = 2   # segundos entre tex.py e com.py
+PAUSA_ENTRE_CICLOS  = 4  # segundos entre cada ciclo completo
 MAX_CICLOS          = 0   # 0 = infinito
 
 TEX = {"arquivo": "tex.py", "nome": "Gerador de GUID",         "emoji": "🆔"}
