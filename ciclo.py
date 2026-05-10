@@ -15,8 +15,8 @@ from datetime import datetime
 # CONFIGURAÇÃO
 # ──────────────────────────────────────────────
 SCRIPTS = [
+    {"arquivo": "tex.py",  "nome": "Gerador de GUID",        "emoji": "🆔"},
     {"arquivo": "dat.py",  "nome": "Alterador de Data +1",   "emoji": "📅"},
-    {"arquivo": "tex.py",  "nome": "Gerador de GUID",        "emoji": "🆔"},    
     {"arquivo": "com.py",  "nome": "Commit & Push Automático","emoji": "📤"},
 ]
 
@@ -73,7 +73,10 @@ def executar_script(script_info, numero):
             [sys.executable, arquivo],
             capture_output=True,
             text=True,
-            timeout=60
+            encoding="utf-8",
+            errors="replace",
+            timeout=60,
+            env={**os.environ, "PYTHONIOENCODING": "utf-8"},
         )
 
         # Exibir saída com indentação
